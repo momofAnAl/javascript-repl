@@ -25,4 +25,8 @@
 // and appear under the VS Code Testing panel.
 
 // Replace with the code you'd like to run
+// console.log('Hello, World!');
+// console.log(1 + 1);
+
+console.log(Array.prototype);
 console.log('Hello, World!');
