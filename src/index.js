@@ -28,5 +28,29 @@
 // console.log('Hello, World!');
 // console.log(1 + 1);
 
-console.log(Array.prototype);
-console.log('Hello, World!');
+// console.log(Array.prototype);
+// console.log('Hello, World!');
+
+const calculateTotalPrice = function (order) {
+    let total = 0;
+    for (const item of order){
+        total += item.price;
+    }
+    return total;
+    // for (let i = 0; i < order.length; i++){
+
+    // }
+}
+const myOrder = [
+    { 
+        entre: 'Fish Tacos', 
+        price: 14.9, 
+    },
+    { 
+        entre: 'Vegan Spaghetti', 
+        price: 21.47,
+    },
+];
+
+const myTotal = calculateTotalPrice(myOrder)
+console.log(`The total is $${myTotal}`);
