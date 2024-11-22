@@ -31,26 +31,40 @@
 // console.log(Array.prototype);
 // console.log('Hello, World!');
 
-const calculateTotalPrice = function (order) {
-    let total = 0;
-    for (const item of order){
-        total += item.price;
-    }
-    return total;
-    // for (let i = 0; i < order.length; i++){
+// const calculateTotalPrice = function (order) {
+//     let total = 0;
+//     for (const item of order){
+//         total += item.price;
+//     }
+//     return total;
+//     // for (let i = 0; i < order.length; i++){
 
-    // }
-}
-const myOrder = [
-    { 
-        entre: 'Fish Tacos', 
-        price: 14.9, 
-    },
-    { 
-        entre: 'Vegan Spaghetti', 
-        price: 21.47,
-    },
-];
+//     // }
+// }
+// const myOrder = [
+//     { 
+//         entre: 'Fish Tacos', 
+//         price: 14.9, 
+//     },
+//     { 
+//         entre: 'Vegan Spaghetti', 
+//         price: 21.47,
+//     },
+// ];
 
-const myTotal = calculateTotalPrice(myOrder)
-console.log(`The total is $${myTotal}`);
+// const myTotal = calculateTotalPrice(myOrder)
+// console.log(`The total is $${myTotal}`);
+
+const giveCasualGreeting = name => {
+    return(`Howdy, ${name}!`)
+};
+
+const giveFormalGreeting = name => {
+    return(`Dear Mx. ${name} 🤵`)
+};
+
+const writeLetter = (giveGreeting, name) => {
+   return `${giveGreeting(name)} I hope this letter finds you well.`; 
+};
+
+console.log(writeLetter(giveFormalGreeting, 'Denise'));
