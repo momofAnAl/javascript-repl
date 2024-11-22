@@ -58,17 +58,3 @@
 
 // const myTotal = calculateTotalPrice(myOrder)
 // console.log(`The total is $${myTotal}`);
-
-const giveCasualGreeting = name => {
-    return(`Howdy, ${name}!`)
-};
-
-const giveFormalGreeting = name => {
-    return(`Dear Mx. ${name} 🤵`)
-};
-
-const writeLetter = (giveGreeting, name) => {
-   return `${giveGreeting(name)} I hope this letter finds you well.`; 
-};
-
-console.log(writeLetter(giveFormalGreeting, 'Denise'));
